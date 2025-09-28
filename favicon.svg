@@ -1,0 +1,26 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- A smoother, more vibrant red gradient, changed to be horizontal -->
+    <linearGradient id="brixelGradientFavicon" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#EF4444" />
+        <stop offset="50%" stop-color="#D9534F" />
+        <stop offset="100%" stop-color="#B91C1C" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="url(#brixelGradientFavicon)"/>
+  <g transform="translate(16, 12) scale(0.9)">
+      <!-- Top block with updated red-theme colors -->
+      <g transform="translate(8, 0)">
+          <polygon points="0,15 18,9 18,19 0,25" fill="#FCA5A5" /> <!-- Medium red tint -->
+          <polygon points="18,9 30,13 30,23 18,19" fill="#991B1B" /> <!-- Darker red shadow -->
+          <polygon points="0,15 12,19 30,13 18,9" fill="#FECACA" /> <!-- Light red highlight -->
+      </g>
+      
+      <!-- Bottom block with updated red-theme colors -->
+      <g transform="translate(-12, 28)">
+          <polygon points="0,6 18,0 36,6 18,12" fill="#FECACA" /> <!-- Light red highlight -->
+          <polygon points="0,6 0,14 18,20 18,12" fill="#991B1B" /> <!-- Darker red shadow -->
+          <polygon points="18,12 18,20 36,14 36,6" fill="#FCA5A5" /> <!-- Medium red tint -->
+      </g>
+  </g>
+</svg>

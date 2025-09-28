@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brixel Tech | Building Digital Experiences, Brick by Brick</title>
+    <meta name="description" content="Brixel Tech crafts stunning websites, robust applications, and captivating graphics. We combine pixel-perfect design with brick-solid development to build lasting digital experiences for businesses and students." />
+    <meta name="keywords" content="web design, web development, graphic design, UI/UX, React development, student resume, presentation design, Brixel Tech, digital solutions, modern websites" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              'sans': ['Inter', 'sans-serif'],
+              'heading': ['Orbitron', 'sans-serif'],
+            },
+            colors: {
+              'primary': '#D9534F',
+              'secondary': '#5BC0DE',
+              'light-bg': '#F7F7F7',
+              'dark-bg': '#1A202C',
+              'light-text': '#2D3748',
+              'dark-text': '#E2E8F0',
+              'light-gray': '#E5E5E5',
+              'dark-gray': '#2D3748',
+            },
+            boxShadow: {
+              'glow': '0 4px 14px 0 rgba(217, 83, 79, 0.25)',
+            },
+            keyframes: {
+              blink: {
+                '50%': { opacity: 0 },
+              },
+              animatedGradient: {
+                '0%': { backgroundPosition: '0% 50%' },
+                '50%': { backgroundPosition: '100% 50%' },
+                '100%': { backgroundPosition: '0% 50%' },
+              },
+              fall: {
+                '0%': { transform: 'translateY(0)', opacity: '0' },
+                '10%': { opacity: '0.7' },
+                '90%': { opacity: '0.7' },
+                '100%': { transform: 'translateY(120vh)', opacity: '0' },
+              }
+            },
+            animation: {
+              blink: 'blink 1s step-start infinite',
+              animatedGradient: 'animatedGradient 15s ease infinite',
+              fall: 'fall linear infinite',
+            },
+            backgroundImage: {
+              'pixel-grid': 'linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px)',
+            },
+            backgroundSize: {
+              '200%': '200% 200%',
+              'grid-size': '20px 20px',
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.22"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

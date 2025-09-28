@@ -1,0 +1,7 @@
+{
+  "name": "Brixel Tech",
+  "description": "A highly interactive, modern, pixel/brick-inspired website for Brixel Tech, showcasing their services, projects, and client testimonials with a sleek dark/light theme and smooth animations.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
