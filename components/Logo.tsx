@@ -4,7 +4,7 @@ import React from 'react';
 const Logo: React.FC = () => {
   return (
     <img 
-      src="images/og logo.jpeg" 
+      src="images/logo png.jpeg" 
       alt="Brixel Tech Logo" 
       width="56" 
       height="56" 
