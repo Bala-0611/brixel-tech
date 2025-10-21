@@ -14,7 +14,8 @@ const quickLinks = [
 const serviceLinks = [
   { href: '#services', label: 'Business Websites' },
   { href: '#services', label: 'E-commerce Solutions' },
-  { href: '#services', label: 'University Projects' },
+  { href: '#services', label: 'University Projects'},
+  { href: '#services', label: 'UI/UX & Graphic Design'},
 ];
 
 const Footer: React.FC = () => {
