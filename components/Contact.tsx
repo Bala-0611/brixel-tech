@@ -1,11 +1,10 @@
-
 import React, { useState } from 'react';
 import InstagramIcon from './icons/InstagramIcon';
 import PhoneIcon from './icons/PhoneIcon';
 import MailIcon from './icons/MailIcon';
 import LinkedinIcon from './icons/LinkedinIcon';
 
-const services = ['Business Websites', 'E-commerce Solutions', 'University Projects'];
+const services = ['Business Websites', 'E-commerce Solutions', 'University Projects', 'UI/UX & Graphic Designing'];
 const WHATSAPP_NUMBER = '918925669365'; // Replace with actual number without '+' or spaces
 
 const Contact: React.FC = () => {

@@ -27,7 +27,7 @@ const projectsData: Project[] = [
     category: 'E-commerce Website',
     title: 'Elite Fitness Studio',
     description: 'Currently under development, this platform is set to redefine online retail with a focus on user experience and scalability.',
-    imageUrl: 'images/GYM  (2).jpg',
+    imageUrl: 'images/GYM .jpg',
     stack: ['Shopify', 'Liquid', 'Node.js', 'GraphQL'],
     duration: '10 Days',
   },

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ScrollDownIcon from './icons/ScrollDownIcon';
 
 interface Service {
   title: string;
@@ -33,7 +34,7 @@ const Services: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="py-24">
+    <section className="py-24 relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-white leading-tight">
@@ -102,6 +103,12 @@ const Services: React.FC = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block">
+        <a href="#projects" aria-label="Scroll to next section" className="block p-3 rounded-full bg-white/5 animate-bounce hover:bg-white/10 transition-colors">
+            <ScrollDownIcon />
+        </a>
       </div>
     </section>
   );
