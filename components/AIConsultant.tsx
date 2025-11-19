@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { GoogleGenAI } from '@google/genai';
 import SparklesIcon from './icons/SparklesIcon';
@@ -20,14 +19,20 @@ const AIConsultant: React.FC = () => {
     setError('');
 
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+      // ⭐ Your API Key Added Here ⭐
+      const ai = new GoogleGenAI({
+        apiKey: "AIzaSyDFF1MtEB5ixWnDm_oLbhvDTY1H5fAcMnE",
+      });
+
       const result = await ai.models.generateContent({
         model: 'gemini-2.5-flash',
         contents: prompt,
         config: {
-          systemInstruction: "You are a friendly and knowledgeable AI consultant for Brixel Tech, a web development agency. Your goal is to answer user questions about web development, e-commerce, university projects, and Brixel Tech's services. Keep your answers concise, helpful, and professional. Do not answer questions outside of this scope.",
-        }
+          systemInstruction:
+            "You are a friendly and knowledgeable AI consultant for Brixel Tech, a web development agency. Your goal is to answer user questions about web development, e-commerce, university projects, and Brixel Tech's services. Keep your answers concise, helpful, and professional. Do not answer questions outside of this scope.",
+        },
       });
+
       const text = result.text;
       setResponse(text);
     } catch (err) {
@@ -78,9 +83,7 @@ const AIConsultant: React.FC = () => {
                 {isLoading && <Loader />}
                 {error && <p className="text-white/90 font-semibold">{error}</p>}
                 {response && !isLoading && (
-                   <p className="text-white/90 whitespace-pre-wrap">
-                    {response}
-                  </p>
+                  <p className="text-white/90 whitespace-pre-wrap">{response}</p>
                 )}
               </div>
             )}
